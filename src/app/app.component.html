@@ -1,16 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div el-container direction="vertical" class="layout">
 
-    <div el-header height="52px">
-        <app-header></app-header>
-    </div>
-    <div el-container>
-        <div el-aside width="200px">Aside</div>
-        <div el-container direction="vertical">
-            <div el-main>Main</div>
-            <div el-footer>Footer</div>
+
+    <div el-header>
+        <div class="layout-content">
+            <app-header></app-header>
         </div>
     </div>
 
+
+    <div class="layout-content">
+        <div el-container>
+            <div el-main>Main</div>
+        </div>
+    </div>
+    <div el-footer>
+        <div class="layout-content">
+            <app-footer></app-footer>
+        </div>
+    </div>
 </div>
 <router-outlet></router-outlet>
