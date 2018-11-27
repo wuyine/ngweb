@@ -1,9 +1,20 @@
-<el-menu [model]="0" (modelChange)="handle($event)" text-color="#fff" background-color="#20A0FF" class="el-menu-demo" mode="horizontal" active-text-color="#ffd04b">
-    <el-menu-item index="1">处理中心</el-menu-item>
-    <el-submenu index="2" title="我的工作台">
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-menu-item index="3"><a href="https://github.com/eleme/element-angular" target="_blank">GITHUB</a></el-menu-item>
-</el-menu>
+<div el-row>
+    <div  el-col span="12" >
+        <div class="logo">
+        wuyine
+        </div>
+    </div>
+    <div  el-col span="12">
+        <el-menu [model]="2" (modelChange)="handle($event)" text-color="#666" background-color="#ffffff" class="el-menu-demo" mode="horizontal" active-text-color="#000">
+            <el-menu-item index="1">首页</el-menu-item>
+            <el-menu-item index="2">日志</el-menu-item>
+            <el-menu-item index="3">分享</el-menu-item>
+            <el-menu-item index="4">笔记</el-menu-item>    
+            <el-submenu index="5" title="关于+留言">
+                <el-menu-item index="5-1">博主</el-menu-item>
+                <el-menu-item index="5-2">留言</el-menu-item>
+                <el-menu-item index="5-3"><a href="https://github.com/wuyine" target="_blank">GITHUB</a></el-menu-item>
+            </el-submenu>
+        </el-menu>
+    </div>
+</div>
